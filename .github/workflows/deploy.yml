@@ -44,4 +44,4 @@ jobs:
           platforms: linux/amd64,linux/arm64/v8
           push: true
           # tags: ${{ steps.meta.outputs.tags }}
-          tags: user/app:latest
+          tags: latest
