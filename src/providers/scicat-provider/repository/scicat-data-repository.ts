@@ -73,9 +73,11 @@ export enum SETS {
   setname = "openaire_data"
 }
 
+const recordStatus = process.env.RECORD_STATUS?process.env.RECORD_STATUS:"registered";
+
 export function factory(options = {}): DataRepository {
   const dao: MongoConnector = MongoConnector.getInstance();
-  const filter = {status: "registered"}
+  const filter = {status: new RegExp(recordStatus) }
 
   return Object.freeze({
     /**

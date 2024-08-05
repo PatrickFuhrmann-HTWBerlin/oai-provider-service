@@ -83,6 +83,15 @@ BASE_URL | Prefix to link back to this server | http://localhost
 
 **Note**: When DB_URL is specified, DB_HOST/DB_PORT/DB_USER/DB_PASS and DATABASE are ignored.
 
+**Misc variables**
+ Key | Description | Default
+ --------:|-------------| --------
+RECORD_STATUS | Status (RegExp) of the record to be published | 'registered'
+
+**Note**: RECORD_STATUS can be used for inofficial oai-pmh services to
+publish selected (pre registered) records.
+
+
 **OAI_PMH Listen Port**
 
  Key | Description | Default
