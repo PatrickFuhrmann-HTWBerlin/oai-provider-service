@@ -2,9 +2,9 @@ name: Deploy
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "oai-desy" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "oai-desy" ]
 
 
 jobs:
