@@ -104,7 +104,7 @@ describe(`Test returned xmls`, () => {
               expect(oaipmh.outerHTML)
                 .to.eql(fixtures[format][test.method]);
               expect(spy.args[0][1])
-                .to.be.eql({status: 'registered'})
+                .to.be.eql({status: /registered/})
               done();
             }).catch(done);
         });
@@ -133,7 +133,7 @@ describe(`Test returned xmls`, () => {
               expect(oaipmh.outerHTML)
                 .to.eql(fixtures[format][test.method]);
               expect(spy.args[0][1])
-                .to.be.eql({status: 'registered'})
+                .to.be.eql({status: /registered/})
               done();
             }).catch(done);
         });
@@ -189,7 +189,7 @@ describe(`Test returned xmls`, () => {
               expect(oaipmh.outerHTML)
                 .to.eql(fixtures[format][test.method]);
               expect(spy.args[0][1])
-                .to.be.eql({status: 'registered'})
+                .to.be.eql({status: /registered/})
               done();
             }).catch(done);
           });
