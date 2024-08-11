@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "oai-desy" ]
   pull_request: 
-    branches: [ "master" ]
+    branches: [ "oai-desy" ]
 
 jobs:
   test_build:
